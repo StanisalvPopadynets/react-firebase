@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useHistory } from 'react-router' 
 
 import './Links.css'
@@ -9,9 +9,9 @@ function LoggedOutLinks() {
   const history = useHistory(); 
 
   return (
-    <ul className='link-box'>
-      {history.location.pathname !== '/login' && <li><Link to='/login'>Login</Link></li>}
-      {history.location.pathname !== '/register' && <li><Link to='/register'>Register</Link></li>}
+    <ul className='link-box-out'>
+      {history.location.pathname !== '/login' && <li><NavLink className='out-link' to='/login'>Login</NavLink></li>}
+      {history.location.pathname !== '/register' && <li><NavLink className='out-link' to='/register'>Register</NavLink></li>}
     </ul>
   )
 }

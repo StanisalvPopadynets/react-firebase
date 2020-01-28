@@ -1,5 +1,16 @@
-.link-box {
+.link-box{
   list-style: none;
+  background: #202020;
+}
+
+.link-box-out {
+  color: whitesmoke;
+  margin-right: auto;
+}
+
+.link-box-out a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .link-box li {
@@ -15,9 +26,42 @@
 .logout-btn {
   text-transform: uppercase;
   text-decoration: none;
-  background: #2c3531;
-  padding: 5px;
-  border-radius: 6px;
+  /* background: #2c3531; */
+  /* padding: 5px; */
+  /* border-radius: 6px; */
   display: inline-block;
   cursor: pointer;
+}
+
+.link {
+  display: block;
+  /* margin: 10px 0; */
+  padding: 10px 20px;
+  text-align: left;
+  transition: all 0.2s ease-out;
+}
+
+.out-link {
+  padding: 16px 10px;
+  height: 50px;
+}
+
+.out-link:hover {
+  background-color: whitesmoke;
+  color: #202020;
+  display: block;
+  /* height: 100%; */
+}
+
+.link:hover {
+  background-color: whitesmoke;
+  color: #202020;
+}
+
+.active-link {
+  border-left: 3px solid whitesmoke;
+  padding-left: 17px;
+  /* border-right: 3px solid #202523; */
+  display: block;
+  background: #141816;
 }

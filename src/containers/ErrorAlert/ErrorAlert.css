@@ -1,7 +1,11 @@
 .error-box {
+  text-align: left;
   color: #D8000C;
   background-color: #FFD2D2;
   border-radius: 5px;
   border: 1px solid #D8000C;
   padding: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  /* word-break: break-all; */
 }

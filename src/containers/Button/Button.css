@@ -1,0 +1,18 @@
+.submit-button {
+  background-color: #e0e0e0;
+  border: 0;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+  line-height: 1.75;
+  transition: all .45s cubic-bezier(.16,1.19,.21,.98);
+}
+
+.submit-button:hover {
+  background-color: #d5d5d5;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}

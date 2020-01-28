@@ -1,10 +1,40 @@
 import React from 'react'
+import DivWrapper from '../../containers/DivWrapper'
 
 export default function PageForAuthed() {
 
   return (
-  <div>
-    Page for authed!
-  </div>
+    <DivWrapper>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+      <div>
+        Page for authed!
+      </div>
+    </DivWrapper>
   )
 }

@@ -1,11 +1,17 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField';
+
+import './Field.css'
 
 export default function Field(props) {
-  return (
-    <React.Fragment>
-      <TextField onChange={props.onChange} type={props.type} name={props.name} label={props.name} />
-      <br />
-    </React.Fragment>
+  return (<div className='field-box'>
+  
+      <label className='input'>
+        <input onChange={props.onChange} placeholder=' ' type={props.type} name={props.name} />
+        <span className="placeholder">{props.name}</span>
+        <span className="border"></span>
+      </label>
+      
+      {/* <br /> */}
+    </div>
   )
 }

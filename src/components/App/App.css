@@ -3,11 +3,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  height: calc(100% - 50px);
+  /* height: 300px; */
+  position: absolute;
+  text-align: center;
+  left: 300px;
+  top: 50px;
+  /* width: auto; */
+  width: calc(100% - 300px);
+  /* width: 400px; */
+}
+
+.App.normal {
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .App{
+    left: 0;
+    width: 100%;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Field from '../../containers/Field'
 import FormContainer from '../../containers/FormContainer'
-import Button from '@material-ui/core/Button'
+import Button from '../../containers/Button'
 import ErrorAlert from '../../containers/ErrorAlert'
 
 export default function RegisterForm(props) {
@@ -42,10 +42,10 @@ export default function RegisterForm(props) {
     <FormContainer onSubmit={onSubmit} >
       <Field onChange={onChange} name="email"/> 
       <Field onChange={onChange} type="password" name="password"/> 
-      <Field onChange={onChange} type="password" name="repeat password"/> 
+      <Field onChange={onChange} type="password" name="repeat"/> 
       {data.localError  && <ErrorAlert message={'passwords doesn\'t match'} />}
       {Object.keys(props.signUpError).length !== 0 && <ErrorAlert message={props.signUpError.message} />}
-      <Button type="submit" variant="contained">Submit</Button>
+      <Button type='submit' class='submit-button'>Submit</Button>
     </FormContainer>
   );
 }
